@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./images/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <main>
+        <!--Main card-->
+        <div class="container" id="card-1">
+            <div id="star-icon">
+               <div class="circle-background"><img src="./images/icon-star.svg" alt="icon-star"></div> 
+            </div>
+            <h1 class="title">How did we do?</h1>
+            <p class="description">
+                Please let us know how we did with your support request. All feedback is appreciated 
+                to help us improve our offering!
+            </p>
+            <div class="select-options">
+                <button class="option" type="button" id="one" onclick="getValue_one()">1</button>
+                <button class="option" type="button" id="two" onclick="getValue_two()">2</button>
+                <button class="option" type="button" id="three" onclick="getValue_three()">3</button>
+                <button class="option" type="button" id="four" onclick="getValue_four()">4</button>
+                <button class="option" type="button" id="five" onclick="getValue_five()">5</button>
+            </div>
+            <input type="submit" id="submit-btn" onclick="show()">
+        </div>
+        
+        <!--Hidden card to display final result.-->
+
+        <div class="container" id="card-2">
+            <img src="./images/illustration-thank-you.svg" alt="thank-you">
+            <p id="final-result-box">You selected <span id="final-value"></span> out of 5</p>
+            <h1 class="title" id="tnq">Thank you!</h1>
+            <p class="description">
+                We appreciate you taking the time to give a rating. If you ever need more support, 
+                don’t hesitate to get in touch!
+            </p>
+        </div>
+
+    </main>
+</body>
+</html>
