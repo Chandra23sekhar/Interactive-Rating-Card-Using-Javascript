@@ -119,6 +119,8 @@ body{
     text-transform: uppercase;
     background-color: var(--orange);
     color: white;
+    border: none;
+    outline: none;
 }
 
 #submit-btn:hover{
